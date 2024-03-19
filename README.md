@@ -5,8 +5,7 @@ Small working example to reproduce a coverage issue with .NET 8 and coverlet 6.0
 
 Steps:
 1. `dotnet build`
-2. `dotnet publish` 
-3. `dotnet test -p:CopyLocalLockFileAssemblies=true --collect="XPlat Code Coverage" -c=Debug -p:CollectCoverage=true --results-directory=./TestResults/ -verbosity:diagnostic --diag ./TestResults/___log.txt`
+2. `dotnet test -p:CopyLocalLockFileAssemblies=true --collect="XPlat Code Coverage" -c=Debug -p:CollectCoverage=true --results-directory=./TestResults/ -verbosity:diagnostic --diag ./TestResults/___log.txt`
 
 Notice in the coverage.cobertura.xml file: `lines-covered="3" lines-valid="6" `
 This is the expected result.
